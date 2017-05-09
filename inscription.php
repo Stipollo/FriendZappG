@@ -17,6 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!----End Calender -------->
 </head>
 <body>	
+	<?php
 	$fb = new Facebook\Facebook([
 	  'app_id' => '{1841263839529789}', // Replace {app-id} with your app id
 	  'app_secret' => '{app-secret}',
@@ -29,6 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	$loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
 
 	echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+	?>
 	  <div class="main">  
 	  <img src="images/baniereFZ.gif" alt="" />
 	    <div class="wrap">    	    
