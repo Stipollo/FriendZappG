@@ -46,29 +46,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             	 <div class="column_right_grid sign-up">
 				 	<div class="sign_in">
 				       <h3>Create your account</h3>
-					    <form>
+					    <form action="GetInscription.php" method="Post">
 							<span>
-								<i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your firstname" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your firstname';}">
+								<i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your firstname" name="prenom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your firstname';}">
 								</span>
 							<span>
-					 	    <i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name';}">
+					 	    <i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your name" name="nom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name';}">
 					 	    </span>
 							
 							<span>
-					 	    <i><img src="images/events.png" alt="" /></i><input type="text" value="Enter your birthday" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your birthday';}">
+					 	    <i><img src="images/events.png" alt="" /></i><input type="text" value="Enter your birthday" name="birthday" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your birthday';}">
 					 	    </span>
 					    	<span>
-					 	    <i><img src="images/mail.png" alt="" /></i><input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+					 	    <i><img src="images/mail.png" alt="" /></i><input type="text" value="Enter your email" name="mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
 					 	    </span>
 					 	    <span>
 					 	     <i><img src="images/lock.png" alt="" /></i>
-					 	     <input type="password" placeholder="Password">
+					 	     <input type="password" name="password" placeholder="Password">
 					 	    </span>
 							<span>
 					 	     <i><img src="images/lock.png" alt="" /></i>
 					 	     <input type="password" placeholder="Confirm password">
 					 	    </span>
-					 		<input type="submit" class="my-button" value="Sign Up">
+					 		<input type="submit" name="inscrire" class="my-button" value="Sign Up">
 					 	</form>					      		   
           		       </div>
 			       <div class="signin_facebook">
