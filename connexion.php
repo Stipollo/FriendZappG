@@ -2,7 +2,7 @@
 $host='friendsapp.ml:22';
 $user='user';
 $pass='test1234.';
-$db='';
+$db='FriendsApp';
 $dsn = "mysql:host=$host;dbname=$db";
 //**************************************
 //* connexion Ã  mysql et Ã  la db      *
