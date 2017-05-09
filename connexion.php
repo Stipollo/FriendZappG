@@ -1,7 +1,7 @@
 <?php
 $host='friendsapp.ml:22';
 $user='user';
-$pass='test1234.';
+$pass='Test1234.';
 $db='FriendsApp';
 $dsn = "mysql:host=$host;dbname=$db";
 //**************************************
