@@ -1,0 +1,9 @@
+Taches groupe Back End : 
+
+1. Récupérer les informations du formulaire d'inscription (lors de la validation).
+2. Les stocker dans une variable et les introduire en paramètres (si toutes ).
+3. La fonction renvoi les informations de l'utilisateur.
+4. La base de données appelle la fonction et introduiut les valeurs dans la BD.
+5. La BD nous renvoie les informations
+6. Nous renvoyons l'information au front End
+7. L'information apparait à l'utilisateur.
