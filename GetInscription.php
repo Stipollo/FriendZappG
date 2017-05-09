@@ -18,15 +18,15 @@
  $lastName=$_POST[nom];
  $email=$_POST[maill];
  $password=$_POST[pass];
- $age=$_POST[datenaiss];
+ $birthday=$_POST[datenaiss];
 
 
 
 }
 }
-$verification = VerificationInscription($email);
+$verification = verification_inscription($email);
 
-if ($verification !=0)
+if ($verification)
 {
 	print "<div class='alert alert-danger'>
                 <strong>Votre pseudo est déjà utilisé par un membre</strong>
@@ -34,9 +34,9 @@ if ($verification !=0)
 }
 else
 {    
-	add_user($lastName, $firstnName, $email, $password, $age );
+	add_user($lastName, $firstnName, $email, $password, $birthday );
 	print "<div class='alert alert-success'>
-                <strong>Bienvenue $prénom</strong>
+                <strong>Bienvenue $firstnName</strong>
                 </div>";
 	
 	
@@ -44,3 +44,4 @@ else
 
 
  ?>
+-
