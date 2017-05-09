@@ -1,5 +1,5 @@
 <?php
-$host='127.0.0.1';
+$host='friendsapp.ml:22';
 $user='user';
 $pass='test1234.';
 $db='';
