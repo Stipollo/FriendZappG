@@ -18,6 +18,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>	
 	<script>
+	  function statusChangeCallback(response) {
+	    console.log('statusChangeCallback');
+	    console.log(response);
+	    if (response.status === 'connected') {
+	      // Logged into your app and Facebook.
+	      testAPI();
+	    } else {
+	      document.getElementById('status').innerHTML = 'Please log ' +
+		'into this app.';
+	    }
+	  }
+
+	  function checkLoginState() {
+	    FB.getLoginStatus(function(response) {
+	      statusChangeCallback(response);
+	    });
+	  }
 	  window.fbAsyncInit = function() {
 	    FB.init({
 	      appId      : '1841263839529789',
@@ -25,6 +42,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	      version    : 'v2.9'
 	    });
 	    FB.AppEvents.logPageView();
+	  };
+	  FB.getLoginStatus(function(response) {
+	    statusChangeCallback(response);
+	  });
+
 	  };
 	  (function(d, s, id){
 	     var js, fjs = d.getElementsByTagName(s)[0];
@@ -38,11 +60,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    window.location.href = "https://stipollo.github.io/FriendZappG/index.html";
 	  }
 	});
+	  function testAPI() {
+	    console.log('Welcome!  Fetching your information.... ');
 	    FB.api('/me', function(response) {
-	      //console.log('Successful login for: ' + response.name);
+	      console.log('Successful login for: ' + response.name);
 	      document.getElementById('status').innerHTML =
 		'Thanks for logging in, ' + response.name + '!';
 	    });
+	  }
 	</script>
 	  <div class="main">  
 	  <a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
@@ -80,6 +105,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 		<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true" ></div>
 				   	</div>
 		               </div>
+		    
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
              </div>
     	<div class="clear"></div>
  	 </div>
