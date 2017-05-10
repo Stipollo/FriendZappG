@@ -37,7 +37,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	  if (response.status === 'connected') {
 	    window.location.href = "https://stipollo.github.io/FriendZappG/index.html";
 	  }
-	});	
+	});
+	function testAPI() {
+	    console.log('Welcome!  Fetching your information.... ');
+	    FB.api('/me', function(response) {
+	      //console.log('Successful login for: ' + response.name);
+	      document.getElementById('status').innerHTML =
+		'Thanks for logging in, ' + response.name + '!';
+	    });
+	}
 	</script>
 	  <div class="main">  
 	  <a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
@@ -78,6 +86,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
              </div>
     	<div class="clear"></div>
  	 </div>
+	<div id="status">
+	</div>
    </div>
   		 <div class="copy-right">
 				<p>© 2013 Designed by <a href="http://graphicburger.com/flat-design-ui-components/" target="_blank">GraphicBurger</a>  • Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
