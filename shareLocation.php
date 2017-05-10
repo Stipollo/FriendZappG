@@ -1,8 +1,8 @@
 <?php
 //header("Access-Control-Allow-Origin: *");
-if(isset($_POST['coordinates']))
+if(isset($_GET['coordinates']))
 {
-    $coordinates = $_POST['coordinates']; 
+    $coordinates = $_GET['coordinates']; 
     echo 'OK';
 }
 else
