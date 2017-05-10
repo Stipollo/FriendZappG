@@ -120,8 +120,7 @@
 
 
 		}
-
-		function shareLocation() {
+function shareLocation() {
 
 			navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
 
@@ -139,9 +138,9 @@
 					},
 					contentType: 'application/json; charset=utf-8',
 					dataType: 'json',
-					error: function (xhr,status,error) {
-						var error = eval("("+xhr.responseText + ")");
-						alert(err.Message);
+					error: function (xhr, status, error) {
+						
+						alert(xhr.responseText);
 						//$('#info').html('<p>An error has occurred</p>');
 					},
 
