@@ -32,7 +32,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	     js = d.createElement(s); js.id = id;
 	     js.src = "//connect.facebook.net/en_US/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));	
+	   }(document, 'script', 'facebook-jssdk'));		
+		
+		
+	FB.getLoginStatus(function(response) {
+	  if (response.status === 'connected') {
+	    document.getElementById('clear').innerHTML = "vous etes connecté";
+	  }
+	});
 	</script>
 	  <div class="main">  
 	  <img src="images/baniereFZ.gif" alt="" />
