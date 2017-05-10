@@ -3,7 +3,7 @@
 if(isset($_GET['coordinates']))
 {
     $coordinates = $_GET['coordinates']; 
-    echo $coordinates;
+    echo json_encode($coordinates);
 }
 else
 {
