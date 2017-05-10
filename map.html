@@ -139,8 +139,10 @@
 					},
 					contentType: 'application/json; charset=utf-8',
 					dataType: 'json',
-					error: function () {
-						$('#info').html('<p>An error has occurred</p>');
+					error: function (xhr,status,error) {
+						var error = eval("("+xhr.responseText + ")");
+						alert(err.Message);
+						//$('#info').html('<p>An error has occurred</p>');
 					},
 
 					success: function (data) {
