@@ -38,14 +38,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    window.location.href = "https://stipollo.github.io/FriendZappG/index.html";
 	  }
 	});
-	function testAPI() {
-	    console.log('Welcome!  Fetching your information.... ');
 	    FB.api('/me', function(response) {
 	      //console.log('Successful login for: ' + response.name);
 	      document.getElementById('status').innerHTML =
 		'Thanks for logging in, ' + response.name + '!';
 	    });
-	}
 	</script>
 	  <div class="main">  
 	  <a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
@@ -80,7 +77,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 	</form>					      		   
           		       </div>
 			       <div class="signin_facebook">
-			 		<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true" onClick="testAPI()"></div>
+			 		<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true" ></div>
 				   	</div>
 		               </div>
              </div>
