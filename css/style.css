@@ -37,6 +37,12 @@ body{
 	background:#2e9dd0;
 	position:relative;
 }
+.bg_DarkBlue{
+	background: #04366e;
+}
+.bg_Blue{
+	background: #3468af;
+}
 .wrap{
 	width:80%;
 	margin:0 auto;
@@ -171,121 +177,9 @@ fieldset#body {
 .column_middle{
 	margin:0 3%;
 }
-/******* Carts *********/
-.chart{
-	margin-top:30px;
-	background: #394264;
-	text-align: center;
-	padding: 2em 0 0 0;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-}
-.chart h4{
-	position:absolute;
-	top:4.5em;
-	right:6.5em;
-	font-size:1.6em;
-	color:#9099B7;
-	display:inline-block;
-}
-.chart h4 span{
-	color:#FFF;
-}
-.chart h3{
-	color: #FFF;
-	font-size: 1.2em;
-	text-transform: uppercase;
-}
-.diagram{
-	position:relative;
-}
-.chart canvas{
-	padding:2em 0;
-	display:block;
-	margin:0 auto;
-	position:relative;
-}
-.chart_list{
-	background:#50597b;
-	text-align:center;
-	border-radius: 0px 0px 5px 5px;
-	-webkit-border-radius: 0px 0px 5px 5px;
-	-moz-border-radius: 0px 0px 5px 5px;
-	-o-border-radius: 0px 0px 5px 5px;
-}
-.chart_list li{
-	float:left;
-	width: 24.8%;
-	border-right: 1px solid #1F253D;
-}
-.chart_list li a{
-	display: block;
-	color: #9099B7;
-	font-size:1em;	
-	padding:10px 0;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-.chart_list li a:hover{
-	background:#3F4663;
-}
-.chart_list li:nth-child(4){
-	border-right:none; 
-}
-.chart_list li a.red{
-	border-top:5px solid #e64c65;
-}
-.chart_list li a.purple{
-	border-top:5px solid #11a8ab;
-}
-.chart_list li a.yellow{
-	border-top:5px solid #fcb150;
-}
-.chart_list li a.blue {
-	border-top: 5px solid #4fc4f6;
-}
-.chart_list p{
-	font-size:1.5em;
-	color:#FFF;
-	padding-top:5px;
-}
-.chart_list em{
-	font-size: 0.7em;
-	vertical-align: top;
-}
-/********* Graph ************/
-.graph{
-	margin-top:30px;
-}
-.graph canvas{
-	padding:20px 48px;
-	display:block;
-	background:#11a8ab;
-	border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-o-border-radius: 5px 5px 0 0;
-}
-.graph img{
-	display:block;
-	width:100%;
-	border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-o-border-radius: 5px 5px 0 0;
-}
-.graph_list{
-	padding:25px;
-	background: #394264;
-	border-radius: 0px 0px 5px 5px;
-	-webkit-border-radius: 0px 0px 5px 5px;
-	-moz-border-radius: 0px 0px 5px 5px;
-	-o-border-radius: 0px 0px 5px 5px;
-}
+.put_middle{
+	margin-left: -32px;
+}   
 .week-month-year{
 	text-align:center;
 	margin-bottom:20px;
@@ -869,10 +763,6 @@ fieldset#body {
 
 }
 /********** Sign In to your account *********/
-.sign-in{
-	margin-top:30px;
-	padding:2em 0 0 0;
- }
 .sign_in{
 	padding-bottom:1em;
 	border-radius:5px 5px 0 0;
@@ -884,7 +774,8 @@ fieldset#body {
     background:#fff;       
 }
 .sign_in input[type="submit"]{
-    background:#e64c65;       
+    background:#e64c65; 
+    margin-top: 30px;		      
 }
 .sign_in input[type="submit"]:hover{
     background: #d4465d;
@@ -895,7 +786,7 @@ fieldset#body {
 .sign_in h2{
 	font-size:200%;
 	color:#fff;
-	margin-bottom:20px;
+	margin-bottom:40px;
 	
 }
 .sign_in h4 a{
@@ -980,7 +871,7 @@ fieldset#body {
 
 /********* Events Date ******/
 .date_events{
-	margin-top:30px;
+	margin-top: 15px;
 	padding:0 0 2em 0;
 	background:#3468af;
 	color: #FFF;
@@ -1069,7 +960,7 @@ fieldset#body {
     font-weight: 600;
 }
 .list-menu {
-    margin-top: -30px;
+    margin-top: -15px;
 
 }
 .list-menu li:hover{
@@ -1096,9 +987,9 @@ fieldset#body {
     float: left;
     color: #b2f5ff;
     margin-left:10px;
-    width: 150px;
     height: 60px;
     overflow: hidden;
+    width: 140px;	
 }
 .lastmsg span,.hour span{
     vertical-align: -20px;
@@ -1113,7 +1004,7 @@ fieldset#body {
     float: left;
 }
 .bubble_message {
-    margin-top: -30px;
+    margin-top: -15px;
 }
 .bubble_message li{
     margin: 15px 5px;
@@ -1238,8 +1129,6 @@ fieldset#body {
 	.wrap {
 		width:95%;
 	}
-	body{
-		margin:15px 0;
 	}
 	.column_left, .column_middle, .column_right {
 		float:none;
@@ -1301,9 +1190,6 @@ fieldset#body {
 	}
 	.graph canvas {
 		padding:20px 0em;
-	}
-	.chart,.graph,.video_palyer,.social_network_likes,.weather, .tweets,.social_networks,.sign-in,.downloading_uploading,.date_events,.calender{
-		margin-top:15px;
 	}
 	.video_palyer iframe{
 		height:160px;
