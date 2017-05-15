@@ -51,7 +51,7 @@
 		// getting basic user info
 		function getInfo() {
 			FB.api('/me', 'GET', {fields: 'first_name,friend-list-id'}, function(response) {
-				document.getElementById('status').innerHTML = response.name;
+				document.getElementById('status').innerHTML = response.first_name;
 			});
 		}
 	</script>
