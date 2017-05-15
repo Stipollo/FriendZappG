@@ -1,7 +1,7 @@
 <?php
 
 function infos_email_membre($email) {
-    require 'connexion_bd.php';
+    require 'connexion.php';
     if (!isset($dbh)) {
         global $dbh;
     }
