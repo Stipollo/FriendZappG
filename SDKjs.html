@@ -49,11 +49,11 @@
 		}
 		
 		// getting basic user info
-		//function getInfo() {
+		function getInfo() {
 			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
 				document.getElementById('status').innerHTML = response.name;
 			});
-		//}
+		}
 	</script>
 
 	<div id="status"></div>
