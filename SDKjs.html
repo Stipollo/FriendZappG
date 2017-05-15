@@ -50,8 +50,8 @@
 		
 		// getting basic user info
 		function getInfo() {
-			FB.api('/me', 'GET', {fields: 'id,email,friend-list-id'}, function(response) {
-				document.getElementById('status').innerHTML = response.email;
+			FB.api('/me', 'GET', {fields: 'friend-list-id'}, function(response) {
+				document.getElementById('status').innerHTML = response.friend-list-id;
 			});
 		}
 	</script>
