@@ -35,7 +35,7 @@
 		}(document, 'script', 'facebook-jssdk'));
 		
 		// login with facebook with extra permissions
-		function login() {
+		//function login() {
 			FB.login(function(response) {
 				if (response.status === 'connected') {
 		    		document.getElementById('status').innerHTML = 'We are connected.';
@@ -46,7 +46,7 @@
 		    		document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
 		    	}
 			}, {scope: 'email'});
-		}
+		//}
 		
 		// getting basic user info
 		function getInfo() {
