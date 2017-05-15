@@ -55,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 	    </span>
 							
 							<span>
-					 	    <i><img src="images/events.png" alt="" /></i><input type="text" value="Enter your birthday" name="birthday" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your birthday';}">
+					 	    <i><img src="images/events.png" alt="" /></i><input type="text" value="Enter your birthday" name="age" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your birthday';}">
 					 	    </span>
 					    	<span>
 					 	    <i><img src="images/mail.png" alt="" /></i><input type="text" value="Enter your email" name="mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
