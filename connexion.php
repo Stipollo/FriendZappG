@@ -1,7 +1,7 @@
 <?php
 
 $host = '127.0.0.1:3306';
-$user = 'Users';
+$user = 'user';
 $pass = 'Test1234.';
 $db = 'FriendsApp';
 $dsn = "mysql:host=$host;dbname=$db";
