@@ -1,6 +1,6 @@
 <?php
 
-$host = 'friendsapp.ml:22';
+$host = '127.0.0.1:3306';
 $user = 'user';
 $pass = 'Test1234.';
 $db = 'FriendsApp';
