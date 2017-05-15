@@ -1,9 +1,9 @@
 <?php
 
-$host = 'mysql.hostinger.fr';
-$user = 'u766958215_admin ';
-$pass = 'test1234.';
-$db = 'u766958215_fapp';
+$host = 'friendsapp.ml';
+$user = 'user ';
+$pass = 'Test1234.';
+$db = 'FriendsApp';
 $dsn = "mysql:host=$host;dbname=$db";
 $dbh = null;
 //**************************************
