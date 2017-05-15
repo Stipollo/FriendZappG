@@ -3,7 +3,7 @@
 $host = 'mysql.hostinger.fr';
 $user = 'u766958215_admin ';
 $pass = 'test1234.';
-$db = 'fApp';
+$db = 'u766958215_fapp';
 $dsn = "mysql:host=$host;dbname=$db";
 $dbh = null;
 //**************************************
