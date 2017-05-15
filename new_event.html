@@ -15,83 +15,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </head>
 <body>			        
-	  <a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
+	<a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
 	    <div class="wrap">       
-            	 <div class="column_right_grid sign-in">
-				 	<div class="sign_in">					
-				       <h2>Add an event</h2>					 
-					    <form>						
-					    	<table>
-								<tr>									
-									<td>
-										Name
-									</td>
-									<td>
-										<input name="name_event" value="">
-									</td>
-								</tr>							
-								<tr>
-									<td>
-										Début
-									</td>
-									<td>
-										<input type="date" name="date_event-begin">
-										<input type="time" name="hour_event-begin">
-									</td>									
-								</tr>
-								<tr>
-									<td>
-										Fin
-									</td>
-									<td>
-										<input type="date" name="date_event-end">
-										<input type="time" name="hour_event-end">
-									</td>									
-								</tr>
-								<tr>
-									<td>
-										Image
-									</td>
-									<td>
-										<input type="file" name="background"/>
-									</td>									
-								</tr>
-								<tr>
-									<td>
-										Type
-									</td>
-									<td>
-										<SELECT name="mode" size="1">
-										<OPTION>Public
-										<OPTION>Privée										
-										</SELECT>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Guest
-									</td>
-									<td>
-										
-									</td>									
-								</tr>
-							</table>
-							<br/>						
-							<input type="submit" class="my-button" value="Sign In">							
-					 	</form>			   
+            <div class="column_right_grid sign-in">
+				<div class="sign_in">					
+				    <h2>Add an event</h2>
+				        <form>                           
+                            <span>
+                                <input type="text" value="Name of your event" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name of your event';}">
+                            </span>
+
+                            <span>
+                                <input type="date" name="date_event_begin"><input type="time" name="hour_event_begin">
+                            </span>
+                             <span>
+                                <input type="date" name="date_event_begin"><input type="time" name="hour_event_begin">
+                            </span>
+                            <span>
+                              <input type="file" name="background"/>
+                            </span>     
+                            <span>
+                              <SELECT name="mode" size="1">
+								<OPTION>Public
+								<OPTION>Privée										
+								</SELECT>
+                            </span> 
+                            <span>
+                              <input type="text" value="Guest" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Guest';}">
+                            </span>                         
+                            <input type="submit" class="my-button" value="Add event">	
+                        </form>					 			   
           		    </div>
-          		    <div class="signin_facebook">
+          		<div class="signin_facebook">
 					   	 <p><a href="#">  <i> <img src="images/facebook.png" alt="" /></i>add event of facebook</a></p>
-				    </div>
-				  		 
-             </div>
+				</div>				  		 
+            </div>
     	<div class="clear"></div>
- 	 </div>
-   <footer>
-  		 <div class="copy-right">
-				<p>© 2013 Designed by <a href="http://graphicburger.com/flat-design-ui-components/" target="_blank">GraphicBurger</a>  • Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
-	 	 </div> 
-	</footer>
+ 	</div>  
 </body>
 </html>
 

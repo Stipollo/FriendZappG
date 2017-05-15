@@ -630,9 +630,8 @@ fieldset#body {
 .column_right_grid span i img{
 	vertical-align:middle;
 }
-.column_right_grid input[type="text"],.column_right_grid input[type="password"],.map_search input[type="textbox"]{
+input[type="file"],select,input[type="date"],input[type="time"],.column_right_grid input[type="text"],.column_right_grid input[type="password"],.map_search input[type="textbox"]{
 	padding:10px;
-    color:#aaa;
     font-size:1em;
     background:none;   
     outline:none;
@@ -641,6 +640,12 @@ fieldset#body {
     width:75%;  
     -webkit-apperance:none;
     font-family: 'ambleregular';
+}
+input[type="date"]{
+	width: 50%;
+}
+input[type="time"]{
+	width: 25%;
 }
 /*********** MAP ***********/
 
@@ -812,7 +817,7 @@ fieldset#body {
 }
 .signin_facebook{
 	background:#e64c65;
-	padding:0px 0 0px 0;
+    padding: 10px 0px 15px 0px;
 	text-align:center;
 	border-radius:0 0 2px 2px;
 	-webkit-border-radius:0 0 5px 5px;
