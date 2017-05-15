@@ -1,10 +1,9 @@
 <?php
 
-$host = '127.0.0.1';
-$user = 'user';
-$port = '3306'
-$pass = 'Test1234.';
-$db = 'FriendsApp';
+$host = 'mysql.hostinger.fr';
+$user = 'u766958215_admin ';
+$pass = 'test1234.';
+$db = 'fApp';
 $dsn = "mysql:host=$host;dbname=$db";
 $dbh = null;
 //**************************************
