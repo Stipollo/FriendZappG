@@ -11,9 +11,10 @@ error_reporting(E_ALL);
     $stmt = $dbh->prepare($searchInDB);
     $stmt->execute();
     $data = array();
-    while($row = $stmt->fetch_assoc())
+    while($row = $stmt->fetch(PDO::FETCH_ASSOC))
 	  {
        $data_item['lat'] = $row['lat'];
+       $data_item['lng'] = $row['lng'];
        
     }
     $encodedData = json_encode($data_item);
