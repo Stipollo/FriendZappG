@@ -165,25 +165,36 @@ function shareLocation() {
 
 
 		function getFriends() {
-			//comparer 2 pos
+			
 			$.ajax({
 				url: 'getFriends.php',
-				data: {
-					format: 'json'
-				},
-				error: function () {
+				dataType: 'json',				
+				error: function (resultat, statut, erreur) {
 					$('#info').html('<p>An error has occurred</p>');
+					
 				},
-				dataType: 'json',
+				
 				success: function (data) {
-					console.log(data);
-					var myLatlng = new google.maps.LatLng(data);
+					//console.log(data);
+					/*var myLatlng = new google.maps.LatLng(data);
 					var mapOptions = { zoom: 12, center: myLatlng }
 					map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-					var marker = new google.maps.Marker({ position: myLatlng, map: map, label: labels[labelIndex++ % labels.length], });
+					var marker = new google.maps.Marker({ position: myLatlng, map: map, label: labels[labelIndex++ % labels.length], });*/
+					var res = data;
+					alert(res.lat +" " + res.lng);
+					var lat = Number(res.lat);
+					var lng = Number(res.lng);
+					var myLatlng = new google.maps.LatLng(lat,lng);
+					var mapOptions = { zoom: 16, center: myLatlng }
+					
+					var marker = new google.maps.Marker({ position: myLatlng, map: map });
+					map.setCenter(marker.getPosition());
 
-				},
-				type: 'POST'
+
+					
+
+				}
+				
 			});
 
 		}
