@@ -81,15 +81,16 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
+<html>
 <head>
 <title>Friendzapp</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <script src="js/jquery.min.js"></script> <!--JQUERY-->
 <script type="text/javascript" src="js/alert.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'/>
  <!----Calender -------->
   <link rel="stylesheet" href="css/clndr.css" type="text/css" />
 
@@ -110,27 +111,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    <form action="" method="Post">
 
 						<span>
-							<i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your firstname" name="prenom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your firstname';}">
+							<i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your firstname" name="prenom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your firstname';}"/>
 							</span>
 						<span>
-					    <i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your name" name="nom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name';}">
+					    <i><img src="images/user.png" alt="" /></i><input type="text" value="Enter your name" name="nom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name';}"/>
 					    </span>
 
 						<span>
-					    <i><img src="images/events.png" alt="" /></i><input type="text" value="Enter your birthday (Ex: 2000-01-01)" name="anniversaire" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your birthday';}">
+					    <i><img src="images/events.png" alt="" /></i><input type="text" value="Enter your birthday (Ex: 2000-01-01)" name="anniversaire" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your birthday';}"/>
 					    </span>
 					<span>
-					    <i><img src="images/mail.png" alt="" /></i><input type="text" value="Enter your email" name="mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+					    <i><img src="images/mail.png" alt="" /></i><input type="text" value="Enter your email" name="mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}"/>
 					    </span>
 					    <span>
 					     <i><img src="images/lock.png" alt="" /></i>
-					     <input type="password" name="mdp1" placeholder="Password">
+					     <input type="password" name="mdp1" placeholder="Password"/>
 					    </span>
 						<span>
 					     <i><img src="images/lock.png" alt="" /></i>
-					     <input type="password" name="mdp2" placeholder="Confirm password">
+					     <input type="password" name="mdp2" placeholder="Confirm password"/>
 					    </span>
-						<input type="submit" name="inscrire" class="my-button" value="Sign Up">
+						<input type="submit" name="inscrire" class="my-button" value="Sign Up"/>
 					</form>
 		       </div>
 
@@ -141,5 +142,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   		 <div class="copy-right">
 				<p>© 2013 Designed by <a href="http://graphicburger.com/flat-design-ui-components/" target="_blank">GraphicBurger</a>  • Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
 	 	 </div>
+	</div>
 </body>
 </html>
