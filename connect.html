@@ -33,11 +33,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	     js.src = "//connect.facebook.net/en_US/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
-	FB.getLoginStatus(function(response) {
-	  if (response.status === 'connected') {
-	    window.location.href = "https://stipollo.github.io/FriendZappG/index.html";
-	  }
-	});	
+	function redirection()
+	{
+		FB.getLoginStatus(function(response) {
+		  if (response.status === 'connected') {
+		    window.location.href = "https://stipollo.github.io/FriendZappG/index.html";
+		  }
+		});
+	}
+		
 	</script>
 	  <div class="main">  
 	 <a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
@@ -61,7 +65,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           		       </div>
           		 	  <div class="signin_facebook">
 					   	<!-- <p><a href="#">  <i> <img src="images/facebook.png" alt="" /></i>Sign in with facebook</a></p> -->
-					  	<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true"></div>
+					  	<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true" onClick="redirection()"></div>
 				   	       </div>
 				      </div>
 				   </div>			 
