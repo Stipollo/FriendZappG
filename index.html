@@ -42,6 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			FB.getLoginStatus(function(response) {
 				if (response.status === 'connected') {
 					getInfo();
+					getFriends();
 				} 
 			});
 		};
