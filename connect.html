@@ -18,13 +18,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '1841263839529789',
-	      xfbml      : true,
-	      version    : 'v2.9'
-	    });
-	    FB.AppEvents.logPageView();
+		window.fbAsyncInit = function() {
+			FB.init({
+			appId      : '1841263839529789',
+			xfbml      : true,
+			version    : 'v2.9'
+			});
+		FB.AppEvents.logPageView();
+		FB.getLoginStatus(function(response) {
+			if (response.status === 'connected') {
+			window.location.href = "https://friendsapp.ml/index.html";
+			}
+		});
 	  };
 	  (function(d, s, id){
 	     var js, fjs = d.getElementsByTagName(s)[0];
@@ -33,14 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	     js.src = "//connect.facebook.net/en_US/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
-	function redirection()
-	{
-		FB.getLoginStatus(function(response) {
-		  if (response.status === 'connected') {
-		    window.location.href = "https://stipollo.github.io/FriendZappG/index.html";
-		  }
-		});
-	}
+	
 		
 	</script>
 	  <div class="main">  
