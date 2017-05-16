@@ -1,7 +1,7 @@
 <?php
 // ************** TRAITEMENT INSCRIPTION ************** //
-include('functions/add_user.php'); // J'inclus la fonction
-include('functions/alert.php'); // Message d'alerte
+include 'functions/add_user.php'; // J'inclus la fonction
+include 'functions/alert.php'; // Message d'alerte
 $Session = new Session();
 
 //include('connexion.php');
