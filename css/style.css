@@ -831,6 +831,10 @@ input[type="time"]{
 .signin_facebook a > i > img{
 	margin:0 5px -10px 0;
 }
+#UserName {
+    z-index: 0;
+    margin-right: 5px;
+}
 /******** Downloading And Uploading Status bar ***********/
 .downloading_uploading{
 	margin-top:30px;
