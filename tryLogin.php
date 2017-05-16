@@ -17,7 +17,7 @@ if ($utilisateur = $stmt->fetch(PDO::FETCH_ASSOC))
 	$_SESSION['role']=$utilisateur['role'];
 	
 	
-	header('Location: sport.php');
+	header('Location: index.html');
 }
 else
 {
