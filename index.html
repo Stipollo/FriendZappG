@@ -31,6 +31,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!----End Calender -------->
 </head>
 <body>
+	<script>
+		function getInfo() {
+			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
+			document.getElementById('status').innerHTML = response.id;
+			});
+		}
+	</script>
 	<div class="wrap">	 
 	    <div class="header">
 			<a href="#"><img src="images/baniereFZ.gif" alt=""/></a>
