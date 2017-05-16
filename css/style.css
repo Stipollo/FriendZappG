@@ -73,14 +73,14 @@ body{
     padding-top:15px;
 }
 /* Login Button */
-#loginButton { 
+#UserName { 
     display:inline-block;  
     position:relative;
     z-index:30;
     cursor:pointer;
 }
 /* Login Button Text */
-#loginButton span {
+#UserName span {
     color:#FFF; 
     font-size:1em; 
     background:url(../images/loginArrow.png) no-repeat 26px 8px;
