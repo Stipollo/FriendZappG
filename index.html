@@ -55,6 +55,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		function getInfo() {
 			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
 				document.getElementById('UserName').innerHTML = response.name;
+				var userInfo = document.getElementById('picture');
+			 	userInfo.innerHTML = '<img src="https://graph.facebook.com/' + response.id + '/picture">';
 			});
 		}
 	</script>
@@ -93,7 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			            </div>
 			        </div>
 			        <div class="profile_img">	
-			            <a href="#"><img src="images/profile_img40x40.jpg" alt="" />	</a>
+			            <a href="#" id="picture"><img src="images/profile_img40x40.jpg" alt="" />	</a>
 			        </div>		
 			        <div class="clear"></div>		  	
 				</div>	
