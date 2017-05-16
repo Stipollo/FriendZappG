@@ -25,11 +25,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			version    : 'v2.9'
 			});
 		FB.AppEvents.logPageView();
-		/*FB.getLoginStatus(function(response) {
+		FB.getLoginStatus(function(response) {
 			if (response.status === 'connected') {
-			window.location.href = "https://friendsapp.ml/index.html";
+				getInfo();
 			}
-		});*/
+		});
 	  };
 	  (function(d, s, id){
 	     var js, fjs = d.getElementsByTagName(s)[0];
@@ -38,8 +38,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	     js.src = "//connect.facebook.net/en_US/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
-	
-		
+	function getInfo() {
+		FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
+			var name = response.last_name;
+			$.post('GetInscription.php',{nom: name});
+		});
+	}		
 	</script>
 	  <div class="main">  
 	 <a href="index.html"><img src="images/baniereFZ.gif" alt=""/></a>
