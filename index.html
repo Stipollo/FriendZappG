@@ -54,7 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}(document, 'script', 'facebook-jssdk'));
 		function getInfo() {
 			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
-			document.getElementById('UserName').innerHTML = response.name;
+				document.getElementById('UserName').innerHTML = response.first_name;
 			});
 		}
 	</script>
