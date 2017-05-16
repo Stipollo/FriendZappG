@@ -8,11 +8,14 @@ ini_set('log_errors', 1);
 ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
 // Afficher les erreurs et les avertissements
 //error_reporting(e_all);
-
+ if (isset($_POST['nom'])
+ {
+     echo $_POST['nom'];
+ }
 $email="";
 if (isset($_POST['inscrire'])) {
 
-    IF (empty($_POST['nom']) or empty($_POST['prenom']) or empty($_POST['password']) or empty($_POST['mail']) or empty($_POST['age'])) {
+    if (empty($_POST['nom']) or empty($_POST['prenom']) or empty($_POST['password']) or empty($_POST['mail']) or empty($_POST['age'])) {
 
 
         print "<div class='alert alert-danger'>
