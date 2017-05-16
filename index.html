@@ -54,7 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}(document, 'script', 'facebook-jssdk'));
 		function getInfo() {
 			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
-			document.getElementById('loginButton').innerHTML = response.name;
+			document.getElementById('UserName').innerHTML = response.name;
 			});
 		}
 	</script>
@@ -76,12 +76,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			    </div>	
 				<div class="profile_details">
 			    	<div id="loginContainer">
-			            <a id="loginButton" class=""><span>Me</span></a>   
+			            <a id="UserName" class=""><span>Me</span></a>   
 			            <div id="loginBox">                
 			                <form id="loginForm">
 			                    <fieldset id="body">
 			                        <div class="user-info">
-						        		<h4>Hello,<a href="#"> Username</a></h4>
+						        		<h4>Hello,<a href="#" id="UserName"> Username</a></h4>
 						        			<ul>
 						        				<li class="profile active"><a href="#">Profile </a></li>
 						        				<li class="logout"><a href="#"> Logout</a></li>
@@ -108,7 +108,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		         	<div class="profile_picture">
 		        		<a href=""><img src="images/profile_img150x150.jpg" alt="" />	</a>
 		        		<div class="profile_picture_name">
-		            		<h2>Anne Hathaway</h2>
+		            		<h2 id="UserName">Anne Hathaway</h2>
 		            		<p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
 		            	</div>
 		             	<span><a href="#"> <img src="images/follow_user.png" alt="" /> </a></span>
